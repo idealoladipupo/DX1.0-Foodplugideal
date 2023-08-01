@@ -117,6 +117,7 @@
 .header-banner__content p {
     margin: 15PX 0;
     line-height: 1.35;
+    text-align: justify;
     
 
 }
