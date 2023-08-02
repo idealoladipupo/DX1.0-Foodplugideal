@@ -1,0 +1,11 @@
+@media (max-width:851px){
+  
+    .nav-destop {
+        display: none;
+    }
+    .nav-mobile {
+        display: flex;
+        
+    }
+
+}
