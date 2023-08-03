@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Foodplug | Home</title>
-    <!-- <script src="https://kit.fontawesome.com/0418d28298.js" crossorigin="anonymous"></script> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
    <link rel="stylesheet" href="defaults.css">
     <link rel="stylesheet" href="main.css">
@@ -13,22 +12,32 @@
 
 
 <body>
+    <div class="backdrop" onclick="hamburgerHandler()"></div>
     <header>
         <nav class="nav-mobile">
             <div class="navmobile-brand">
                 <div class="mobile-logo">
                     <i class="fa-regular fa-hand-lizard"></i>
-                    
                 </div>
                 <span>FoodPlug</span>
             </div>
 
            
             <div class="navmobile-menu" onclick="hamburgerHandler()">
-                <div class="menu-bar">
+                <div class="menu-bar"></div>
+           </div>
 
-                </div>
+            <div class="navmobile-links">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About Us</a></li>
+                    <li><a href="">Explore Foods</a></li>
+                    <li><a href="">Review</a></li>
+                    <li><a href="">FAQ</a></li>
+                    <button class="btn">(+234) 806-3540-631</button>        
+                   </ul>
             </div>
+
 
         </nav>
 
@@ -36,7 +45,7 @@
         <div class="header-logo"><i class="fa-regular fa-hand-lizard"></i></div>
         <div class="link-holder">
             <ul>
-                <li><a href="">Home</a></li>
+                <li><a href="" >Home</a></li>
                 <li><a href="">About Us</a></li>
                 <li><a href="">Explore Foods</a></li>
                 <li><a href="">Review</a></li>

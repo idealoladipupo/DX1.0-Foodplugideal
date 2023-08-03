@@ -55,6 +55,18 @@ body {
   height: 50px;
   font-size: 28px;
 }
+.backdrop {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: var(--light-text-color)
+    /* z-index: 1000; */
+}
+.showbackdrop{
+    display: block;
+
+}
 .navmobile-brand {
   display: flex;
   align-items: center;
@@ -67,7 +79,7 @@ body {
 
 .nav-mobile {
   background: var(--main-color);
-  display: flex;
+  display: none;
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
@@ -117,12 +129,48 @@ body {
     transform: translateY(-10px);
 
 }
-/* /// hanburger menu starts here///// */
+/* /// hanburger menu  here///// */
 .navmobile-menu {
   width: 40px;
   height: 45px;
   display: flex;
   align-items: center;
+}
+
+
+.navmobile-links {
+    border-top: 1.5px solid var(--white-color);
+    background: var(--main-color);
+    position: fixed;
+    right: -100%;
+    top: 70px;
+    width: 50%;
+    height: 100vh;
+    transition: all 0.5s ease;
+}
+
+.Shownnavmobile-Links {
+right: 0px;}
+.navmobile-links ul {
+    list-style: none;
+}
+
+.navmobile-links a {
+    color: var(--white-color);
+    text-decoration: none;
+    padding: 15px 20px;
+    display: block;
+}
+.navmobile-links a:hover {
+    background: var(--white-color);
+    color: var(--main-color);
+}
+
+.navmobile-links button {
+    margin-left: 20px;
+    background: transparent;
+    border: 2px solid var(--white-color);
+    color: var(--white-color);
 }
 
 .nav-destop {
@@ -167,7 +215,8 @@ body {
 }
 
 .header-banner {
-  height: 460px;
+padding-top: 100px;
+padding-bottom: 30px;
   background: url("img/banner.jpg");
   background-size: cover;
   background-position: center right;

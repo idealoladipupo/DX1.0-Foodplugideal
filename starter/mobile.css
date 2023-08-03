@@ -5,7 +5,13 @@
     }
     .nav-mobile {
         display: flex;
-        
-    }
 
+    }
+ .header-banner{
+    background-position: center;
+ }
+
+ .header-banner__content{
+    width: 100%;
+ }
 }
