@@ -1,17 +1,27 @@
-@media (max-width:851px){
-  
-    .nav-destop {
-        display: none;
-    }
-    .nav-mobile {
-        display: flex;
-
-    }
- .header-banner{
+@media (max-width: 851px) {
+  .nav-destop {
+    display: none;
+  }
+  .nav-mobile {
+    display: flex;
+  }
+  .header-banner {
     background-position: center;
- }
+  }
 
- .header-banner__content{
+  .header-banner__content {
     width: 100%;
- }
+  }
+  .aboutfoods-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .aboutfoods-image {
+    margin: 20px 0;
+    width: 90%;
+    height: 17.5rem;
+  }
+  .aboutfoods-text {
+    width: 90%;
+  }
 }

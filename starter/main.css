@@ -11,6 +11,10 @@
     url("./font/lato-regular-webfont.woff2") format("woff2"),
     url("./font/lato-bold.tff") format("truetype");
 }
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
 
 body {
   font-family: "customlato", sans-serif;
@@ -27,6 +31,7 @@ body {
   border: none;
   border: 1.5px solid transparent;
 }
+
 .btn-light {
   background: transparent;
   border: 1.5px solid var(--main-color);
@@ -35,6 +40,7 @@ body {
 .btn-light:hover {
   color: var(--main-color);
 }
+
 .btn-main:hover {
   background: var(--white-color);
   color: var(--main-color);
@@ -42,7 +48,6 @@ body {
 }
 
 .navmobile-brand {
-
   color: var(--white-color);
 }
 
@@ -51,21 +56,21 @@ body {
   justify-content: center;
   align-items: center;
   border: 2px solid var(--white-color);
-  width: 50px;
-  height: 50px;
-  font-size: 28px;
+  width: 3.125rem;
+  height: 3.125rem;
+  font-size: 1.75rem;
 }
-.backdrop {
-    display: none;
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    background: var(--light-text-color)
-    /* z-index: 1000; */
-}
-.showbackdrop{
-    display: block;
 
+.backdrop {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: var(--light-text-color);
+  /* z-index: 1000; */
+}
+.showbackdrop {
+  display: block;
 }
 .navmobile-brand {
   display: flex;
@@ -73,7 +78,7 @@ body {
 }
 .navmobile-brand span {
   margin-left: 6px;
-  font-size: 28px;
+  font-size: 1.75rem;
   font-weight: 700;
 }
 
@@ -89,88 +94,92 @@ body {
   left: 0;
   top: 0;
 }
+
 /* /// hanburger menu starts here///// */
 
 .menu-bar {
-    width: 100%;
-    height: 3px;
-    background: var(--white-color);
-    position: relative;
-}
-.showMenu .menu-bar {
-    background: transparent;
+  width: 100%;
+  height: 0.1875rem;
+  background: var(--white-color);
+  position: relative;
 }
 
 .showMenu .menu-bar {
-    background: transparent;
+  background: transparent;
 }
+
+.showMenu .menu-bar {
+  background: transparent;
+}
+
 .showMenu .menu-bar::before {
-    transform: rotate(45deg);
-
+  transform: rotate(45deg);
 }
 
-
-.showMenu .menu-bar::after{
-    transform: rotate(-45deg);
+.showMenu .menu-bar::after {
+  transform: rotate(-45deg);
 }
 
 .menu-bar::before,
 .menu-bar::after {
-    content: "";
-    height: 3px;
-    width: 100%;
-    position: absolute;
-    background: var(--white-color);
+  content: "";
+  height: 0.1875rem;
+  width: 100%;
+  position: absolute;
+  background: var(--white-color);
 }
-.menu-bar::after {
-    transform: translateY(10px);
-}
-.menu-bar::before {
-    transform: translateY(-10px);
 
+.menu-bar::after {
+  transform: translateY(10px);
 }
+
+.menu-bar::before {
+  transform: translateY(-10px);
+}
+
 /* /// hanburger menu  here///// */
 .navmobile-menu {
-  width: 40px;
-  height: 45px;
+  width: 2.5rem;
+  height: 2.8125rem;
   display: flex;
   align-items: center;
 }
 
-
 .navmobile-links {
-    border-top: 1.5px solid var(--white-color);
-    background: var(--main-color);
-    position: fixed;
-    right: -100%;
-    top: 70px;
-    width: 50%;
-    height: 100vh;
-    transition: all 0.5s ease;
+  border-top: 1.5px solid var(--white-color);
+  background: var(--main-color);
+  position: fixed;
+  right: -100%;
+  top: 70px;
+  width: 50%;
+  height: 100vh;
+  transition: all 0.5s ease;
 }
 
 .Shownnavmobile-Links {
-right: 0px;}
+  right: 0px;
+}
 .navmobile-links ul {
-    list-style: none;
+  list-style: none;
 }
 
 .navmobile-links a {
-    color: var(--white-color);
-    text-decoration: none;
-    padding: 15px 20px;
-    display: block;
+  color: var(--white-color);
+  text-decoration: none;
+  padding: 15px 20px;
+  display: block;
 }
+
 .navmobile-links a:hover {
-    background: var(--white-color);
-    color: var(--main-color);
+  background: var(--white-color);
+  color: var(--main-color);
 }
 
 .navmobile-links button {
-    margin-left: 20px;
-    background: transparent;
-    border: 2px solid var(--white-color);
-    color: var(--white-color);
+  margin-left: 20px;
+  background: transparent;
+  border: 2px solid var(--white-color);
+  color: var(--white-color);
 }
 
 .nav-destop {
@@ -185,13 +194,13 @@ right: 0px;}
 
 .header-logo {
   background: var(--main-color);
-  height: 100px;
-  width: 100px;
+  height: 6.25rem;
+  width: 6.25rem;
   color: var(--white-color);
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 45px;
+  font-size: 2.8125rem;
   position: fixed;
   left: 63px;
 }
@@ -199,10 +208,12 @@ right: 0px;}
 .link-holder {
   display: block;
 }
+
 .link-holder ul {
   list-style: none;
   display: flex;
 }
+
 .link-holder ul a {
   padding: 10px 15px;
   display: block;
@@ -210,13 +221,14 @@ right: 0px;}
   color: var(--main-color);
   padding: 15px 20px;
 }
+
 .link-holder ul a:hover {
   border: 1px solid var(--main-color);
 }
 
 .header-banner {
-padding-top: 100px;
-padding-bottom: 30px;
+  /* padding-top: 100px;
+  padding-bottom: 30px; */
   background: url("img/banner.jpg");
   background-size: cover;
   background-position: center right;
@@ -224,18 +236,22 @@ padding-bottom: 30px;
 
 .header-banner__container {
   padding-top: 100px;
+  padding-bottom: 30px;
   width: 90%;
   margin: 0 auto;
 }
+
 .header-banner__content {
   width: 50%;
 }
+
 .header-banner__content h1 {
-  font-size: 45px;
+  font-size: 2.8125rem;
   color: var(--main-color-dark);
   font-weight: 200;
   line-height: 1.1;
 }
+
 .header-banner__content p {
   margin: 15px 0;
   line-height: 1.35;
@@ -252,15 +268,84 @@ padding-bottom: 30px;
   background: var(--main-color);
   padding: 15px 0;
 }
+
 .counter-item {
-  width: 180px;
+  width: 11.25rem;
   color: var(--white-color);
   text-align: center;
 }
+
 .counter-item h4 {
-  font-size: 28px;
+  font-size: 1.75rem;
 }
+
 .counter-item p {
   margin-top: 5px;
   text-transform: uppercase;
 }
+
+/* ========= about us section starts here======= */
+.aboutfoods {
+  /* border: 1px solid black; */
+  padding: 30px 0;
+}
+
+.aboutfoods-container {
+  /* border: 1px solid tomato; */
+  width: 90%;
+  margin: 0 auto;
+  justify-content: space-between;
+  display: flex;
+  padding: 20px 0;
+}
+
+.aboutfoods-image {
+  height: 21.875rem;
+  width: 48%;
+  border-radius: 25px;
+  overflow: hidden;
+}
+.aboutfoods-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.image-fix img {
+  object-fit: contain;
+}
+
+.aboutfoods-text {
+  width: 100%;
+}
+
+.aboutfoods-text h2 {
+  background: var(--light-text-color);
+  border-left: 5px solid var(--main-color);
+  border-right: 5px solid var(--main-color);
+  padding: 10px 15px;
+  color: var(--main-color);
+  font-size: 28px;
+  line-height: 1.3;
+}
+.aboutfoods-text p {
+  margin: 18px 0;
+  line-height: 1.2;
+}
+.aboutfoods-text p {
+  margin: 18px 0;
+  line-height: 1.2;
+}
+
+.aboutfoods-text ol {
+  list-style: none;
+  margin-bottom: 15px;
+}
+.aboutfoods-text i {
+  color: var(--main-color);
+  margin-right: 8px;
+}
+.aboutfoods-text li {
+  margin: 5px 0;
+}
+/* ========= about us section starts here======= */
