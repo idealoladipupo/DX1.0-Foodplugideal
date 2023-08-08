@@ -18,7 +18,7 @@ html {
 
 body {
   font-family: "customlato", sans-serif;
-  height: 1600px;
+  height: 3600px;
 }
 
 .btn-main {
@@ -348,14 +348,13 @@ body {
   margin: 5px 0;
 }
 .aboutfoods-quote {
-  height: 320px;
   background: var(--gray-gradient), url("./img/about3.jpg");
   background-size: cover;
   background-position: bottom right;
   display: flex;
   justify-content: center;
   align-items: center;
-  /* padding: 30px 50px; */
+  padding: 30px 0;
 }
 .foodsquote-container {
   width: 90%;
@@ -401,4 +400,127 @@ body {
   animation: ripple 3s infinite;
 }
 
-/* ========= about us section starts here======= */
+/* ========= about us section ends here======= */
+
+/* ========= explore foods  section starts here======= */
+
+.explorefoods-container {
+  width: 90%;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+.explorefoods-container h3 {
+  text-align: center;
+  color: var(--main-color);
+  font-size: 25px;
+  font-weight: 700;
+}
+.explorefoods-container p {
+  text-align: justify;
+  margin: 15px 0;
+  line-height: 1.5;
+}
+
+.explorefoods-cardshowcase {
+  padding: 20px 0;
+  justify-content: space-evenly;
+  display: flex;
+}
+
+.foodcard-imageholder {
+  width: 100%;
+  height: 180px;
+  overflow: hidden;
+  border-top-left-radius: 9px;
+  border-bottom-right-radius: 9px;
+}
+.foodcard-imageholder img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.foodcard {
+  width: 285px;
+}
+.foodcard-textholder {
+  padding: 20px 0;
+}
+.foodcard-textholder h4 {
+  font-size: 18px;
+}
+.foodcard-textholder p {
+  margin: 8px 0;
+}
+.foodcard-textholder .price {
+  border-bottom: 2px solid var(--light-text-color);
+  padding-bottom: 10px;
+  font-size: 20px;
+  font-weight: 700;
+}
+.price span {
+  color: var(--text-color);
+  text-decoration: line-through;
+}
+/* ========= explore foods  section ends here======= */
+/* ========= faq   section starts here======= */
+#faq {
+  width: 90%;
+  margin: 0 auto;
+  padding: 30px 0;
+}
+
+#faq h2 {
+  text-align: center;
+  color: var(--main-color);
+  font-weight: 700;
+  font-size: 25px;
+  margin-bottom: 15px;
+}
+.faq-container {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 20px;
+  justify-content: center;
+}
+.faq-card {
+  width: 48%;
+}
+
+.faq-card h3 {
+  color: var(--main-color-dark);
+  margin-bottom: 15px;
+}
+.faq-card h3 i {
+  color: var(--main-color);
+  margin-right: 5px;
+}
+.faq-card p {
+  text-align: justify;
+}
+
+/* ========= faq   section ends here======= */
+
+/* ========= review   section starts here======= */
+#review {
+  width: 90%;
+  margin: 0 auto;
+  height: 280px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background: var(--gradient), url("./img/cta.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+#review p {
+  color: var(--white-color);
+  font-size: 28px;
+  font-weight: 700;
+}
+
+#review button:hover {
+  background: transparent;
+  color: var(--white-color);
+}
+/* ========= review   section ends here======= */
