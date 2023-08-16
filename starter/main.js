@@ -8,5 +8,17 @@ function hamburgerHandler(){
     mobileLinksHolder.classList.toggle('Shownnavmobile-Links')
     backdrop.classList.toggle('showbackdrop')
 
-
 }
+
+ScrollReveal({ 
+    reset: true,  
+    distance: '100px',  
+    duration: 2000,
+    origin: 'left', });
+
+ScrollReveal().reveal('.header-banner__content h1', {origin: 'left', distance: '200px',});
+ScrollReveal().reveal('.counter-item, .foodcard-imageholder',{
+    rotate: {
+            y: 180,
+         }
+});
