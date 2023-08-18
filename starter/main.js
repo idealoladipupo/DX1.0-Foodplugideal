@@ -16,6 +16,7 @@ ScrollReveal({
     duration: 2000,
     origin: 'left', });
 
+ScrollReveal().reveal('.footer button', {origin: 'right', distance: '200px',});
 ScrollReveal().reveal('.header-banner__content h1', {origin: 'left', distance: '200px',});
 ScrollReveal().reveal('.counter-item, .foodcard-imageholder',{
     rotate: {

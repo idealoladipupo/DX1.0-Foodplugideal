@@ -99,6 +99,12 @@ header nav {
 }
 
 /* /// hanburger menu starts here///// */
+.navmobile-menu {
+  width: 2.5rem;
+  height: 2.8125rem;
+  display: flex;
+  align-items: center;
+}
 
 .menu-bar {
   width: 100%;
@@ -140,13 +146,7 @@ header nav {
   transform: translateY(-10px);
 }
 
-/* /// hanburger menu  here///// */
-.navmobile-menu {
-  width: 2.5rem;
-  height: 2.8125rem;
-  display: flex;
-  align-items: center;
-}
+/* /// hanburger menu ends here///// */
 
 .navmobile-links {
   border-top: 1.5px solid var(--white-color);
